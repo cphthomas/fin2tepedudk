@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+     <title>Quiz Makroøkonomi</title>
+     <link rel="stylesheet"
+           href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+     <link rel="stylesheet"
+           href="styles.css">
+     <link rel="icon"
+           href="favicon.ico">
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+     <script id="MathJax-script"
+             async
+             src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+     <script>
+          window.MathJax = {
+               tex: {
+                    inlineMath: [['$', '$']],
+                    displayMath: [['$$', '$$']]
+               },
+               svg: {
+                    scale: 0.9,
+               },
+               chtml: {
+                    scale: 0.9,
+               }
+          };
+     </script>
+     <link rel="stylesheet"
+           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+     <style>
+          .card-body {
+               font-size: 1em;
+          }
+
+          .card img {
+               max-width: 100%;
+               height: auto;
+          }
+     </style>
+</head>
+
+<body>
+     <header> <a href="index.html"
+             target="_blank"><img src="/tepedu.svg"
+                    alt="Logo"
+                    width="8%"></a>
+          <h2>Quiz Makroøkonomi</h2>
+     </header>
+
+
+     <div class="container">
+          <div class="row justify-content-center">
+               <div class="col-12 col-md-12 col-lg-12">
+                    <div class="card mt-5">
+                         <div class="card-body">
+
+
+
+
+
+
+                              <div id="postProgressContent"
+                                   class="mt-4"
+                                   style="color: rgb(255, 255, 255);">
+                                   <div>
+                                        <h3>Betalingsbalancen og valutamarkeder</h3>
+
+                                        <table class="table table-striped table-bordered table-hover table w-100">
+
+                                             <tbody>
+                                                  <tr>
+                                                       <td>Formål</td>
+                                                       <td>At lære om betalingsbalancen og valutamarkeder</td>
+                                                  </tr>
+                                                  <tr>
+                                                       <td>Anslået tidsforbrug</td>
+                                                       <td>2 timer</td>
+                                                  </tr>
+                                                  <tr>
+                                                       <td>Forudsætning</td>
+                                                       <td><a href="https://makrooekonomiteoriogbeskrivelse-7udg.digi.hansreitzel.dk/"
+                                                               target="_blank"
+                                                               style="color: white !important">Makroøkonomi
+                                                                 - Teori og beskrivelse <br> Greel og Rygner <br>
+                                                                 4. Betalingsbalance og valutamarked
+                                                            </a>
+                                                       </td>
+                                                  </tr>
+                                                  <tr>
+                                                       <td>Opgave</td>
+                                                       <td>Besvar denne quiz</td>
+                                                  </tr>
+                                                  <tr>
+                                                       <td>Feedback</td>
+                                                       <td>til hvert spørgsmål kan du se det korrekte svar</td>
+                                                  </tr>
+                                             </tbody>
+                                        </table>
+                                   </div>
+                              </div>
+
+
+                              <br>
+                              <br>
+
+
+                              <h1 id="question"
+                                  class="card-title"></h1>
+                              <div id="options"
+                                   class="mt-4"></div>
+                              <div id="progress-bar"
+                                   class="progress-bar-container"></div>
+
+
+
+
+
+
+
+
+
+
+                              <!-- 4.1 -->
+                              <div class="question"
+                                   data-question="Hvad er betalingsbalancens løbende poster?"
+                                   data-answer="2"
+                                   data-explanation="Betalingsbalancens løbende poster omfatter:<br><br>
+                                            - Handel med varer (eksport/import)<br>
+                                            - Handel med tjenesteydelser<br>
+                                            - Transport og rejser<br>
+                                            - Løn og formueindkomst<br>
+                                            - Ensidige overførsler<br><br>
+                                            Dette giver et samlet billede af et lands løbende økonomiske transaktioner med udlandet.
+                                            <br><br>
+                                            Tjek evt. disse kilder for uddybning:<br><br>
+                                            <a href='https://chat.openai.com'
+                                               class='effectLinks'
+                                               data-replace='ChatGPT: Forklar betalingsbalancens løbende poster og deres komponenter'
+                                               target='_blank'>
+                                                 <span>ChatGPT: 'Forklar betalingsbalancens løbende poster og deres komponenter'</span>
+                                            </a>
+                                            <br>
+                                            <br>
+                                            <a href='https://claude.ai'
+                                               class='effectLinks'
+                                               data-replace='Claude: Hvad indgår i betalingsbalancens løbende poster?'
+                                               target='_blank'>
+                                                 <span>Claude: 'Hvad indgår i betalingsbalancens løbende poster?'</span>
+                                            </a>
+                                            <br>
+                                            <br>
+                                            <a href='https://gemini.google.com'
+                                               class='effectLinks'
+                                               data-replace='Gemini: Beskriv elementerne i betalingsbalancens løbende poster'
+                                               target='_blank'>
+                                                 <span>Gemini: 'Beskriv elementerne i betalingsbalancens løbende poster'</span>
+                                            </a>
+                                            <br>">
+                                   <div class="option"
+                                        data-option="Kun handel med varer og tjenester"></div>
+                                   <div class="option"
+                                        data-option="Kun finansielle transaktioner"></div>
+                                   <div class="option"
+                                        data-option="Alle løbende transaktioner med udlandet inkl. varer, tjenester, løn, formueindkomst og overførsler">
+                                   </div>
+                                   <div class="option"
+                                        data-option="Kun pengeoverførsler mellem lande"></div>
+                              </div>
+
+                              <!-- 4.2 -->
+                              <div class="question"
+                                   data-question="Hvad er forskellen på spotmarkedet og terminsmarkedet for valuta?"
+                                   data-answer="1"
+                                   data-explanation="Spotmarked: Handler afvikles inden for 2 dage.<br>
+                                            Terminsmarked: Handler afvikles på et aftalt tidspunkt i fremtiden.<br><br>
+                                            Terminsmarkedet bruges ofte til at sikre sig mod valutakursudsving.<br><br>
+                                            Tjek evt. disse kilder for uddybning:<br><br>
+                                            <a href='https://chat.openai.com'
+                                               class='effectLinks'
+                                               data-replace='ChatGPT: Forklar forskellen mellem spot- og terminsmarked for valuta'
+                                               target='_blank'>
+                                                 <span>ChatGPT: 'Forklar forskellen mellem spot- og terminsmarked for valuta'</span>
+                                            </a>
+                                            <br>
+                                            <br>
+                                            <a href='https://claude.ai'
+                                               class='effectLinks'
+                                               data-replace='Claude: Hvad er hovedforskellen på spot- og terminshandel med valuta?'
+                                               target='_blank'>
+                                                 <span>Claude: 'Hvad er hovedforskellen på spot- og terminshandel med valuta?'</span>
+                                            </a>
+                                            <br>
+                                            <br>
+                                            <a href='https://gemini.google.com'
+                                               class='effectLinks'
+                                               data-replace='Gemini: Sammenlign spot- og terminsmarked for valuta'
+                                               target='_blank'>
+                                                 <span>Gemini: 'Sammenlign spot- og terminsmarked for valuta'</span>
+                                            </a>
+                                            <br>">
+                                   <div class="option"
+                                        data-option="Der er ingen forskel"></div>
+                                   <div class="option"
+                                        data-option="Spothandel afvikles straks/inden for 2 dage, terminshandel på et senere aftalt tidspunkt">
+                                   </div>
+                                   <div class="option"
+                                        data-option="Spothandel er kun for store beløb"></div>
+                                   <div class="option"
+                                        data-option="Terminshandel er altid billigere"></div>
+                              </div>
+
+                              <!-- 4.3 -->
+                              <div class="question"
+                                   data-question="Hvad betyder det når en valuta apprecierer?"
+                                   data-answer="3"
+                                   data-explanation="Appreciering (modsat ) betyder at valutaens værdi stiger i forhold til andre valutaer gennem markedskræfterne (uden myndighedsindgreb).<br><br>
+                                        Dette står i modsætning til en depreciering, som betyder valutaens værdi falder.
+                                        <br><br>
+                                             Appreciering er ikke det samme som en revaluering, som er en officiel opskrivning af valutakursen besluttet af myndighederne.<br><br>
+                                            Tjek evt. disse kilder for uddybning:<br><br>
+                                            <a href='https://chat.openai.com'
+                                               class='effectLinks'
+                                               data-replace='ChatGPT: Hvad er forskellen på appreciering og revaluering af en valuta?'
+                                               target='_blank'>
+                                                 <span>ChatGPT: 'Hvad er forskellen på appreciering og revaluering af en valuta?'</span>
+                                            </a>
+                                            <br>
+                                            <br>
+                                            <a href='https://claude.ai'
+                                               class='effectLinks'
+                                               data-replace='Claude: Forklar begreberne appreciering og revaluering'
+                                               target='_blank'>
+                                                 <span>Claude: 'Forklar begreberne appreciering og revaluering'</span>
+                                            </a>
+                                            <br>
+                                            <br>
+                                            <a href='https://gemini.google.com'
+                                               class='effectLinks'
+                                               data-replace='Gemini: Definer appreciering af en valuta'
+                                               target='_blank'>
+                                                 <span>Gemini: 'Definer appreciering af en valuta'</span>
+                                            </a>
+                                            <br>">
+                                   <div class="option"
+                                        data-option="Valutaen falder i værdi"></div>
+                                   <div class="option"
+                                        data-option="Værdien holdes kunstigt nede"></div>
+                                   <div class="option"
+                                        data-option="Centralbanken hæver renten"></div>
+                                   <div class="option"
+                                        data-option="Valutaens værdi stiger gennem markedskræfterne"></div>
+                              </div>
+
+                              <!-- 4.4 -->
+                              <div class="question"
+                                   data-question="En burger koster 100 kr i Danmark og 15 USD i USA. Hvad er købekraftspariteten mellem DKK og USD?"
+                                   data-answer="2"
+                                   data-explanation="Købekraftsparitet betyder at valutakursen skal justere sig så samme vare koster det samme i forskellige lande.<br><br>
+                                            I dette eksempel:<br>
+                                            - Burgerpris Danmark = 100 DKK<br>
+                                            - Burgerpris USA = 15 USD<br><br>
+                                            For at have købekraftsparitet skal valutakursen være:<br>
+                                            100 DKK = 15 USD<br>
+                                            1 USD = 100/15 = 6,67 DKK<br><br>
+                                            Hvis den faktiske valutakurs afviger fra dette, betyder det at burgeren er relativt dyrere i det ene land.<br><br>
+                                            Tjek evt. disse kilder for uddybning:<br><br>
+                                            <a href='https://chat.openai.com'
+                                               class='effectLinks'
+                                               data-replace='ChatGPT: Beregn købekraftsparitet hvis en burger koster 100 kr i Danmark og 15 USD i USA'
+                                               target='_blank'>
+                                                 <span>ChatGPT: 'Beregn købekraftsparitet hvis en burger koster 100 kr i Danmark og 15 USD i USA'</span>
+                                            </a>
+                                            <br>
+                                            <br>
+                                            <a href='https://claude.ai'
+                                               class='effectLinks'
+                                               data-replace='Claude: Udregn købekraftsparitet mellem DKK og USD ud fra en burger til 100 kr / 15 USD'
+                                               target='_blank'>
+                                                 <span>Claude: 'Udregn købekraftsparitet mellem DKK og USD ud fra en burger til 100 kr / 15 USD'</span>
+                                            </a>
+                                            <br>
+                                            <br>
+                                            <a href='https://gemini.google.com'
+                                               class='effectLinks'
+                                               data-replace='Gemini: Hvad er købekraftspariteten hvis en burger koster 100 DKK i Danmark og 15 USD i USA?'
+                                               target='_blank'>
+                                                 <span>Gemini: 'Hvad er købekraftspariteten hvis en burger koster 100 DKK i Danmark og 15 USD i USA?'</span>
+                                            </a>
+                                            <br>
+                                            <br>
+                                            <a href='https://www.wolframalpha.com'
+                                               class='effectLinks'
+                                               data-replace='Wolfram Alpha: 100/15'
+                                               target='_blank'>
+                                                 <span>Wolfram Alpha: '100/15'</span>
+                                            </a>
+                                            <br>">
+                                   <div class="option"
+                                        data-option="1 USD = 5,50 DKK"></div>
+                                   <div class="option"
+                                        data-option="1 USD = 15 DKK"></div>
+                                   <div class="option"
+                                        data-option="1 USD = 6,67 DKK"></div>
+                                   <div class="option"
+                                        data-option="1 USD = 8,00 DKK"></div>
+                              </div>
+
+                              <!-- 4.5 -->
+                              <div class="question"
+                                   data-question="Hvis renten er 2% i Danmark og 4% i USA, hvad fortæller den udækkede renteparitet os om den forventede udvikling i kronekursen?"
+                                   data-answer="1"
+                                   data-explanation="Den udækkede renteparitet siger at renteforskellen mellem to lande afspejler den forventede ændring i valutakursen.<br><br>
+                                             I dette eksempel:<br>
+                                             - Dansk rente = 2%<br>
+                                             - USA rente = 4%<br>
+                                             - Renteforskel = -2%<br><br>
+                                             Når renten er 2 procentpoint lavere i Danmark, forventes den danske krone at stige (appreciere) med ca. 2% i forhold til dollaren. Dette udligner renteforskellen, så det reelle afkast bliver ens.<br><br>
+                                             Tjek evt. disse kilder for uddybning:<br><br>
+                                             <a href='https://chat.openai.com'
+                                                class='effectLinks'
+                                                data-replace='ChatGPT: Hvis renten er 2% i Danmark og 4% i USA, hvordan vil kronen udvikle sig ifølge renteparitet? Forklar med eksempel'
+                                                target='_blank'>
+                                                  <span>ChatGPT: 'Hvis renten er 2% i Danmark og 4% i USA, hvordan vil kronen udvikle sig ifølge renteparitet? Forklar med eksempel'</span>
+                                             </a>
+                                             <br>
+                                             <br>
+                                             <a href='https://claude.ai'
+                                                class='effectLinks'
+                                                data-replace='Claude: Giv et simpelt eksempel på udækket renteparitet med 2% dansk rente og 4% amerikansk rente'
+                                                target='_blank'>
+                                                  <span>Claude: 'Giv et simpelt eksempel på udækket renteparitet med 2% dansk rente og 4% amerikansk rente'</span>
+                                             </a>
+                                             <br>
+                                             <br>
+                                             <a href='https://gemini.google.com'
+                                                class='effectLinks'
+                                                data-replace='Gemini: Beregn forventet valutakursændring ved 2% dansk rente og 4% amerikansk rente'
+                                                target='_blank'>
+                                                  <span>Gemini: 'Beregn forventet valutakursændring ved 2% dansk rente og 4% amerikansk rente'</span>
+                                             </a>
+                                             <br>">
+                                   <div class="option"
+                                        data-option="Kronen vil falde med 2%"></div>
+                                   <div class="option"
+                                        data-option="Kronen vil stige med 2%"></div>
+                                   <div class="option"
+                                        data-option="Kronekursen vil være uændret"></div>
+                                   <div class="option"
+                                        data-option="Kronen vil falde med 4%"></div>
+                              </div>
+
+                              <!-- 4.6 -->
+                              <div class="question"
+                                   data-question="Hvad er Danmarks fastkurspolitik?"
+                                   data-answer="2"
+                                   data-explanation="Danmarks fastkurspolitik betyder at:<br>
+                                       - Den danske krone holdes stabil over for euroen<br>
+                                       - Centralkurs på 746,038 kr. pr. 100 euro<br>
+                                       - Udsvingsgrænser på ±2,25%<br>
+                                       - Nationalbanken forpligter sig til at intervenere hvis kronen nærmer sig grænserne<br><br>
+                                       Tjek evt. disse kilder for uddybning:<br><br>
+                                       <a href='https://chat.openai.com'
+                                          class='effectLinks'
+                                          data-replace='ChatGPT: Forklar Danmarks fastkurspolitik'
+                                          target='_blank'>
+                                            <span>ChatGPT: 'Forklar Danmarks fastkurspolitik'</span>
+                                       </a>
+                                       <br>
+                                       <br>
+                                       <a href='https://claude.ai'
+                                          class='effectLinks'
+                                          data-replace='Claude: Hvad indebærer den danske fastkurspolitik?'
+                                          target='_blank'>
+                                            <span>Claude: 'Hvad indebærer den danske fastkurspolitik?'</span>
+                                       </a>
+                                       <br>
+                                       <br>
+                                       <a href='https://gemini.google.com'
+                                          class='effectLinks'
+                                          data-replace='Gemini: Beskriv hovedtrækkene i Danmarks fastkurspolitik'
+                                          target='_blank'>
+                                            <span>Gemini: 'Beskriv hovedtrækkene i Danmarks fastkurspolitik'</span>
+                                       </a>
+                                       <br>">
+                                   <div class="option"
+                                        data-option="At kronen følger dollaren"></div>
+                                   <div class="option"
+                                        data-option="At Danmark har selvstændig valutapolitik"></div>
+                                   <div class="option"
+                                        data-option="At kronen holdes stabil over for euroen inden for ±2,25%">
+                                   </div>
+                                   <div class="option"
+                                        data-option="At kronekursen bestemmes af markedet"></div>
+                              </div>
+
+                              <!-- 4.7 -->
+                              <div class="question"
+                                   data-question="Hvad er den effektive kronekurs?"
+                                   data-answer="1"
+                                   data-explanation="Den effektive kronekurs er:<br><br>
+                                       Et vægtet gennemsnit af kronens værdi over for Danmarks 25 vigtigste handelspartneres valutaer.<br><br>
+                                       Vægtene bestemmes ud fra landenes andel af Danmarks samlede udenrigshandel.<br><br>
+                                       Tjek evt. disse kilder for uddybning:<br><br>
+                                       <a href='https://chat.openai.com'
+                                          class='effectLinks'
+                                          data-replace='ChatGPT: Hvad er den effektive kronekurs og hvordan beregnes den?'
+                                          target='_blank'>
+                                            <span>ChatGPT: 'Hvad er den effektive kronekurs og hvordan beregnes den?'</span>
+                                       </a>
+                                       <br>
+                                       <br>
+                                       <a href='https://claude.ai'
+                                          class='effectLinks'
+                                          data-replace='Claude: Forklar begrebet effektiv kronekurs'
+                                          target='_blank'>
+                                            <span>Claude: 'Forklar begrebet effektiv kronekurs'</span>
+                                       </a>
+                                       <br>
+                                       <br>
+                                       <a href='https://gemini.google.com'
+                                          class='effectLinks'
+                                          data-replace='Gemini: Hvordan måles den effektive kronekurs?'
+                                          target='_blank'>
+                                            <span>Gemini: 'Hvordan måles den effektive kronekurs?'</span>
+                                       </a>
+                                       <br>">
+                                   <div class="option"
+                                        data-option="Kronens kurs over for euroen"></div>
+                                   <div class="option"
+                                        data-option="Et vægtet gennemsnit af kronens værdi over for vigtige handelspartneres valutaer">
+                                   </div>
+                                   <div class="option"
+                                        data-option="Den daglige valutakurs"></div>
+                                   <div class="option"
+                                        data-option="Kronens værdi målt i guld"></div>
+                              </div>
+
+                              <!-- 4.8 -->
+                              <div class="question"
+                                   data-question="Hvilke konsekvenser har eurosamarbejdet for Danmark?"
+                                   data-answer="3"
+                                   data-explanation="Som ikke-euroland men medlem af ERM2 betyder det for Danmark:<br><br>
+                                       - Fast kronekurs over for euroen<br>
+                                       - Pengepolitikken følger ECB<br>
+                                       - Selvstændig valuta og mulighed for at udtræde<br>
+                                       - Ikke med i ECBs beslutningsprocesser<br><br>
+                                       Tjek evt. disse kilder for uddybning:<br><br>
+                                       <a href='https://chat.openai.com'
+                                          class='effectLinks'
+                                          data-replace='ChatGPT: Hvordan påvirker eurosamarbejdet Danmark som ikke-euroland?'
+                                          target='_blank'>
+                                            <span>ChatGPT: 'Hvordan påvirker eurosamarbejdet Danmark som ikke-euroland?'</span>
+                                       </a>
+                                       <br>
+                                       <br>
+                                       <a href='https://claude.ai'
+                                          class='effectLinks'
+                                          data-replace='Claude: Forklar Danmarks forhold til eurosamarbejdet'
+                                          target='_blank'>
+                                            <span>Claude: 'Forklar Danmarks forhold til eurosamarbejdet'</span>
+                                       </a>
+                                       <br>
+                                       <br>
+                                       <a href='https://gemini.google.com'
+                                          class='effectLinks'
+                                          data-replace='Gemini: Hvilken betydning har eurosamarbejdet for Danmark?'
+                                          target='_blank'>
+                                            <span>Gemini: 'Hvilken betydning har eurosamarbejdet for Danmark?'</span>
+                                       </a>
+                                       <br>">
+                                   <div class="option"
+                                        data-option="Danmark bruger euro som valuta"></div>
+                                   <div class="option"
+                                        data-option="Danmark har helt selvstændig pengepolitik"></div>
+                                   <div class="option"
+                                        data-option="Danmark er med i alle EU's møder"></div>
+                                   <div class="option"
+                                        data-option="Danmark følger ECB's pengepolitik men beholder kronen"></div>
+                              </div>
+
+                              <!-- 4.9 -->
+                              <div class="question"
+                                   data-question="Hvad er handelsbalancen?"
+                                   data-answer="0"
+                                   data-explanation="Handelsbalancen viser forskellen mellem:<br><br>
+                                       - Vareeksport (indtægter)<br>
+                                       - Vareimport (udgifter)<br><br>
+                                       Er en del af betalingsbalancens løbende poster.<br>
+                                       Overskud betyder at eksporten er større end importen.<br><br>
+                                       Tjek evt. disse kilder for uddybning:<br><br>
+                                       <a href='https://chat.openai.com'
+                                          class='effectLinks'
+                                          data-replace='ChatGPT: Hvad er handelsbalancen og hvordan beregnes den?'
+                                          target='_blank'>
+                                            <span>ChatGPT: 'Hvad er handelsbalancen og hvordan beregnes den?'</span>
+                                       </a>
+                                       <br>
+                                       <br>
+                                       <a href='https://claude.ai'
+                                          class='effectLinks'
+                                          data-replace='Claude: Forklar begrebet handelsbalance'
+                                          target='_blank'>
+                                            <span>Claude: 'Forklar begrebet handelsbalance'</span>
+                                       </a>
+                                       <br>
+                                       <br>
+                                       <a href='https://gemini.google.com'
+                                          class='effectLinks'
+                                          data-replace='Gemini: Hvordan opgøres handelsbalancen?'
+                                          target='_blank'>
+                                            <span>Gemini: 'Hvordan opgøres handelsbalancen?'</span>
+                                       </a>
+                                       <br>">
+                                   <div class="option"
+                                        data-option="Forskellen mellem vareeksport og vareimport"></div>
+                                   <div class="option"
+                                        data-option="Samlet international handel"></div>
+                                   <div class="option"
+                                        data-option="Import af varer"></div>
+                                   <div class="option"
+                                        data-option="Eksport af tjenester"></div>
+                              </div>
+
+                              <!-- 4.10 -->
+                              <div class="question"
+                                   data-question="Hvad er en devaluering?"
+                                   data-answer="2"
+                                   data-explanation="En devaluering er:<br><br>
+                                       En officiel nedskrivning af en valutas værdi besluttet af myndighederne.<br><br>
+                                       Formål er typisk at:<br>
+                                       - Øge eksport<br>
+                                       - Mindske import<br>
+                                       - Forbedre konkurrenceevnen<br><br>
+                                       Adskiller sig fra en depreciering som er et markedsbestemt fald i valutakursen.<br><br>
+                                       Tjek evt. disse kilder for uddybning:<br><br>
+                                       <a href='https://chat.openai.com'
+                                          class='effectLinks'
+                                          data-replace='ChatGPT: Hvad er en devaluering og hvorfor bruges den?'
+                                          target='_blank'>
+                                            <span>ChatGPT: 'Hvad er en devaluering og hvorfor bruges den?'</span>
+                                       </a>
+                                       <br>
+                                       <br>
+                                       <a href='https://claude.ai'
+                                          class='effectLinks'
+                                          data-replace='Claude: Forklar forskellen på devaluering og depreciering'
+                                          target='_blank'>
+                                            <span>Claude: 'Forklar forskellen på devaluering og depreciering'</span>
+                                       </a>
+                                       <br>
+                                       <br>
+                                       <a href='https://gemini.google.com'
+                                          class='effectLinks'
+                                          data-replace='Gemini: Beskriv formål og konsekvenser ved en devaluering'
+                                          target='_blank'>
+                                            <span>Gemini: 'Beskriv formål og konsekvenser ved en devaluering'</span>
+                                       </a>
+                                       <br>">
+                                   <div class="option"
+                                        data-option="Når valutaen stiger i værdi"></div>
+                                   <div class="option"
+                                        data-option="Et naturligt fald i valutakursen"></div>
+                                   <div class="option"
+                                        data-option="En officiel nedskrivning af valutaens værdi"></div>
+                                   <div class="option"
+                                        data-option="Når renten sættes op"></div>
+                              </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </div>
+
+     <script src="script.js">
+     </script>
+</body>
+
+</html>

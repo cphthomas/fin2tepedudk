@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+     <title>Quiz Makroøkonomi</title>
+     <link rel="stylesheet"
+           href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+     <link rel="stylesheet"
+           href="styles.css">
+     <link rel="icon"
+           href="favicon.ico">
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+     <script id="MathJax-script"
+             async
+             src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+     <script>
+          window.MathJax = {
+               tex: {
+                    inlineMath: [['$', '$']],
+                    displayMath: [['$$', '$$']]
+               },
+               svg: {
+                    scale: 0.9,
+               },
+               chtml: {
+                    scale: 0.9,
+               }
+          };
+     </script>
+     <link rel="stylesheet"
+           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+     <style>
+          .card-body {
+               font-size: 1em;
+          }
+
+          .card img {
+               max-width: 100%;
+               height: auto;
+          }
+     </style>
+</head>
+
+<body>
+     <header> <a href="index.html"
+             target="_blank"><img src="/tepedu.svg"
+                    alt="Logo"
+                    width="8%"></a>
+          <h2>Quiz Makroøkonomi</h2>
+     </header>
+
+
+     <div class="container">
+          <div class="row justify-content-center">
+               <div class="col-12 col-md-12 col-lg-12">
+                    <div class="card mt-5">
+                         <div class="card-body">
+
+
+
+
+
+
+                              <div id="postProgressContent"
+                                   class="mt-4"
+                                   style="color: rgb(255, 255, 255);">
+                                   <div>
+                                        <h3>Konjunkturbeskrivelse</h3>
+
+                                        <table class="table table-striped table-bordered table-hover table w-100">
+
+                                             <tbody>
+                                                  <tr>
+                                                       <td>Formål</td>
+                                                       <td>At forstå konjunkturbeskrivelser</td>
+                                                  </tr>
+                                                  <tr>
+                                                       <td>Anslået tidsforbrug</td>
+                                                       <td>2 timer</td>
+                                                  </tr>
+                                                  <tr>
+                                                       <td>Forudsætning</td>
+                                                       <td><a href="https://makrooekonomiteoriogbeskrivelse-7udg.digi.hansreitzel.dk/"
+                                                               target="_blank"
+                                                               style="color: white !important">Makroøkonomi
+                                                                 - Teori og beskrivelse <br> Greel og Rygner <br>3.
+                                                                 Konjunkturbeskrivelse</a>
+                                                       </td>
+                                                  </tr>
+                                                  <tr>
+                                                       <td>Opgave</td>
+                                                       <td>Besvar denne quiz</td>
+                                                  </tr>
+                                                  <tr>
+                                                       <td>Feedback</td>
+                                                       <td>til hvert spørgsmål kan du se det korrekte svar</td>
+                                                  </tr>
+                                             </tbody>
+                                        </table>
+                                   </div>
+                              </div>
+
+
+                              <br>
+                              <br>
+
+
+                              <h1 id="question"
+                                  class="card-title"></h1>
+                              <div id="options"
+                                   class="mt-4"></div>
+                              <div id="progress-bar"
+                                   class="progress-bar-container"></div>
+
+
+
+
+
+
+
+
+
+                              <!-- 3.10 -->
+                              <div class="question"
+                                   data-question="Hvilken udvikling har der været i Danmarks betalingsbalance siden 1990?"
+                                   data-answer="3"
+                                   data-explanation="Danmarks betalingsbalanceudvikling siden 1990:<br><br>
+                                        • Fra underskud til overskud<br>
+                                        • Stigende overskud efter 2000<br>
+                                        • Særligt stort overskud efter 2010<br>
+                                        • 2021: Overskud på 226 mia. kr.<br><br>
+                                        Årsager:<br>
+                                        • Forbedret konkurrenceevne<br>
+                                        • Øget eksport<br>
+                                        • Højere opsparing<br><br>
+                                        <a href='https://chat.openai.com'
+                                           class='effectLinks'
+                                           data-replace='ChatGPT prompt: Beskriv udviklingen i Danmarks betalingsbalance siden 1990'
+                                           target='_blank'>
+                                             <span>ChatGPT prompt: Beskriv udviklingen i Danmarks betalingsbalance siden 1990</span>
+                                        </a>
+                                        <br>
+                                        <br>
+                                        <a href='https://claude.ai'
+                                           class='effectLinks'
+                                           data-replace='Claude prompt: Hvordan har Danmarks betalingsbalance udviklet sig de sidste 30 år?'
+                                           target='_blank'>
+                                             <span>
+                                                  Claude prompt: Hvordan har Danmarks betalingsbalance udviklet sig de sidste 30 år?
+                                             </span>
+                                        </a><br>
+                                        ">
+                                   <div class="option"
+                                        data-option="Konstant underskud"></div>
+                                   <div class="option"
+                                        data-option="Stigende underskud"></div>
+                                   <div class="option"
+                                        data-option="Svingende balance"></div>
+                                   <div class="option"
+                                        data-option="Fra underskud til stort overskud"></div>
+                              </div>
+
+
+
+
+
+                              <!-- 3.11 -->
+                              <div class="question"
+                                   data-question="Hvad karakteriserer en betalingsbalanceforbedring?"
+                                   data-answer="0"
+                                   data-explanation="En betalingsbalanceforbedring er karakteriseret ved:<br><br>
+                                        • Større eksportindtægter end importudgifter<br>
+                                        • Nettoindtægter fra renter og udbytter fra udlandet<br>
+                                        • Positiv ændring i fordringserhvervelsen over for udlandet<br>
+                                        • Kan føre til opbygning af valutareserven<br><br>
+                                        Dette styrker landets internationale økonomiske position.<br><br>
+                                       
+                                        <a href='https://chat.openai.com' 
+                                           class='effectLinks'
+                                           data-replace='ChatGPT prompt: Hvad betyder en forbedring af betalingsbalancen for et lands økonomi?'
+                                           target='_blank'>
+                                             <span>ChatGPT prompt: Hvad betyder en forbedring af betalingsbalancen for et lands økonomi?</span>
+                                        </a>
+                                        <br>
+                                        <br>
+                                        <a href='https://claude.ai'
+                                           class='effectLinks'
+                                           data-replace='Claude prompt: Forklar hvad der karakteriserer en forbedring af betalingsbalancen'
+                                           target='_blank'>
+                                             <span>Claude prompt: Forklar hvad der karakteriserer en forbedring af betalingsbalancen</span>
+                                        </a>
+                                        <br>">
+                                   <div class="option"
+                                        data-option="Større eksportindtægter end importudgifter"></div>
+                                   <div class="option"
+                                        data-option="Mere import end eksport"></div>
+                                   <div class="option"
+                                        data-option="Faldende valutareserve"></div>
+                                   <div class="option"
+                                        data-option="Større udlandsgæld"></div>
+                              </div>
+
+                              <!-- 3.12 -->
+                              <div class="question"
+                                   data-question="Hvordan hænger inflation sammen med betalingsbalancen?"
+                                   data-answer="3"
+                                   data-explanation="Sammenhængen mellem inflation og betalingsbalance:<br><br>
+                                        • Høj inflation svækker konkurrenceevnen<br>
+                                        • Forringet konkurrenceevne mindsker eksport<br>
+                                        • Lavere eksport forværrer betalingsbalancen<br>
+                                        • Lavere inflation forbedrer typisk betalingsbalancen<br><br>
+                                        Dette viser betydningen af prisstabilitet for udenrigshandlen.<br><br>
+                                        <a href='https://chat.openai.com'
+                                           class='effectLinks'
+                                           data-replace='ChatGPT prompt: Hvordan påvirker inflation betalingsbalancen?'
+                                           target='_blank'>
+                                             <span>ChatGPT prompt: Hvordan påvirker inflation betalingsbalancen?</span>
+                                        </a>
+                                        <br>
+                                        <br>
+                                        <a href='https://claude.ai'
+                                           class='effectLinks'
+                                           data-replace='Claude prompt: Forklar sammenhængen mellem inflation og betalingsbalancen'
+                                           target='_blank'>
+                                             <span>Claude prompt: Forklar sammenhængen mellem inflation og betalingsbalancen</span>
+                                        </a>
+                                        <br>">
+                                   <div class="option"
+                                        data-option="Ingen sammenhæng"></div>
+                                   <div class="option"
+                                        data-option="Høj inflation forbedrer altid betalingsbalancen"></div>
+                                   <div class="option"
+                                        data-option="Kun påvirkning via renter"></div>
+                                   <div class="option"
+                                        data-option="Høj inflation forværrer typisk betalingsbalancen"></div>
+                              </div>
+
+                              <!-- 3.13 -->
+                              <div class="question"
+                                   data-question="Hvordan påvirker ledigheden betalingsbalancen?"
+                                   data-answer="0"
+                                   data-explanation="Ledighed og betalingsbalance hænger sammen gennem:<br><br>
+                                        • Lavere ledighed øger typisk importen via højere forbrug<br>
+                                        • Øget import forværrer betalingsbalancen<br>
+                                        • Høj ledighed dæmper normalt importefterspørgslen<br>
+                                        • Ændret importefterspørgsel påvirker handelsbalancen<br><br>
+                                        Dette viser sammenhængen mellem indenlandsk aktivitet og udenrigshandel.<br><br>
+                                        <a href='https://chat.openai.com'
+                                           class='effectLinks'
+                                           data-replace='ChatGPT prompt: Hvordan påvirker ændringer i ledigheden betalingsbalancen?'
+                                           target='_blank'>
+                                             <span>ChatGPT prompt: Hvordan påvirker ændringer i ledigheden betalingsbalancen?</span>
+                                        </a>
+                                        <br>
+                                        <br>
+                                        <a href='https://claude.ai'
+                                           class='effectLinks'
+                                           data-replace='Claude prompt: Forklar sammenhængen mellem ledighed og betalingsbalance'
+                                           target='_blank'>
+                                             <span>Claude prompt: Forklar sammenhængen mellem ledighed og betalingsbalance</span>
+                                        </a>
+                                        <br>">
+                                   <div class="option"
+                                        data-option="Lav ledighed øger typisk importen"></div>
+                                   <div class="option"
+                                        data-option="Ledighed påvirker ikke betalingsbalancen"></div>
+                                   <div class="option"
+                                        data-option="Kun påvirkning via valutakurser"></div>
+                                   <div class="option"
+                                        data-option="Høj ledighed øger altid importen"></div>
+                              </div>
+
+                              <!-- 3.15 -->
+                              <div class="question"
+                                   data-question="Hvad viser det økonomiske nøgletal nettofordringserhvervelse?"
+                                   data-answer="0"
+                                   data-explanation="Nettofordringserhvervelse viser:<br><br>
+                                        • Ændringen i Danmarks nettoformue over for udlandet<br>
+                                        • Beregnes som overskud på løbende poster plus kapitaloverførsler<br>
+                                        • Positiv værdi betyder øget tilgodehavende/reduceret gæld<br>
+                                        • Negativ værdi betyder reduceret tilgodehavende/øget gæld<br><br>
+                                        Dette er et centralt mål for udviklingen i landets internationale økonomi.<br><br>
+                                        <a href='https://chat.openai.com'
+                                           class='effectLinks'
+                                           data-replace='ChatGPT prompt: Hvad er nettofordringserhvervelse og hvad fortæller det om økonomien?'
+                                           target='_blank'>
+                                             <span>ChatGPT prompt: Hvad er nettofordringserhvervelse og hvad fortæller det om økonomien?</span>
+                                        </a>
+                                        <br>
+                                        <br>
+                                        <a href='https://claude.ai'
+                                           class='effectLinks'
+                                           data-replace='Claude prompt: Forklar begrebet nettofordringserhvervelse og dets betydning'
+                                           target='_blank'>
+                                             <span>Claude prompt: Forklar begrebet nettofordringserhvervelse og dets betydning</span>
+                                        </a>
+                                        <br>">
+                                   <div class="option"
+                                        data-option="Ændring i Danmarks nettoformue over for udlandet"></div>
+                                   <div class="option"
+                                        data-option="Den samlede eksport"></div>
+                                   <div class="option"
+                                        data-option="Statens skatteindtægter"></div>
+                                   <div class="option"
+                                        data-option="Valutareservens størrelse"></div>
+                              </div>
+
+                              <!-- 3.1 -->
+                              <div class="question"
+                                   data-question="Hvad indeholder betalingsbalancens løbende poster?"
+                                   data-answer="0"
+                                   data-explanation="Betalingsbalancens løbende poster omfatter:<br><br>
+                                        • Værdien af varehandel (import/eksport)<br>
+                                        • Tjenesteydelser<br> 
+                                        • Transport og rejser<br>
+                                        • Løn og formueindkomst<br>
+                                        • Ensidige overførsler<br><br>
+                                        Disse transaktioner viser landets løbende økonomiske samkvem med udlandet.<br><br>
+                                        <a href='https://chat.openai.com'
+                                           class='effectLinks'
+                                           data-replace='ChatGPT prompt: Hvad indeholder betalingsbalancens løbende poster?'
+                                           target='_blank'>
+                                             <span>ChatGPT prompt: Hvad indeholder betalingsbalancens løbende poster?</span>
+                                        </a>
+                                        <br>
+                                        <br>
+                                        <a href='https://claude.ai'
+                                           class='effectLinks'
+                                           data-replace='Claude prompt: Forklar komponenterne i betalingsbalancens løbende poster'
+                                           target='_blank'>
+                                             <span>Claude prompt: Forklar komponenterne i betalingsbalancens løbende poster</span>
+                                        </a>
+                                        <br>">
+                                   <div class="option"
+                                        data-option="Handel med varer og tjenester samt indkomstoverførsler"></div>
+                                   <div class="option"
+                                        data-option="Alene handel med fysiske varer"></div>
+                                   <div class="option"
+                                        data-option="Finansielle transaktioner med udlandet"></div>
+                                   <div class="option"
+                                        data-option="Bankernes valutatransaktioner"></div>
+                              </div>
+
+                              <!-- 3.2 -->
+                              <div class="question"
+                                   data-question="Hvordan var Danmarks handelsbalance i 2021?"
+                                   data-answer="3"
+                                   data-explanation="Danmarks handelsbalance i 2021:<br><br>
+                                        Vareeksport: 893 mia. kr.<br>
+                                        Vareimport: 814 mia. kr.<br>
+                                        Handelsbalance: +79 mia. kr.<br><br>
+                                        Dette viser et betydeligt overskud på varehandelen med udlandet.<br><br>
+                                        <a href='https://chat.openai.com'
+                                           class='effectLinks'
+                                           data-replace='ChatGPT prompt: Beskriv Danmarks handelsbalance i 2021'
+                                           target='_blank'>
+                                             <span>ChatGPT prompt: Beskriv Danmarks handelsbalance i 2021</span>
+                                        </a>
+                                        <br>
+                                        <br>
+                                        <a href='https://claude.ai'
+                                           class='effectLinks'
+                                           data-replace='Claude prompt: Hvordan så Danmarks handelsbalance ud i 2021?'
+                                           target='_blank'>
+                                             <span>Claude prompt: Hvordan så Danmarks handelsbalance ud i 2021?</span>
+                                        </a>
+                                        <br>">
+                                   <div class="option"
+                                        data-option="Underskud på 79 mia. kr."></div>
+                                   <div class="option"
+                                        data-option="Balance mellem import og eksport"></div>
+                                   <div class="option"
+                                        data-option="Underskud på 100 mia. kr."></div>
+                                   <div class="option"
+                                        data-option="Overskud på 79 mia. kr."></div>
+                              </div>
+
+                              <!-- 3.3 -->
+                              <div class="question"
+                                   data-question="Hvad var Danmarks samlede betalingsbalanceoverskud i 2021?"
+                                   data-answer="0"
+                                   data-explanation="Danmarks betalingsbalanceoverskud i 2021:<br><br>
+                                        • Samlet overskud: 226 mia. kr.<br><br>
+                                        Overskuddet kom fra:<br>
+                                        • Handelsbalance: +79 mia. kr.<br>
+                                        • Tjenestebalance: +100 mia. kr.<br>
+                                        • Overførselsbalance: +47 mia. kr.<br><br>
+                                        <a href='https://chat.openai.com'
+                                           class='effectLinks'
+                                           data-replace='ChatGPT prompt: Hvor stort var Danmarks betalingsbalanceoverskud i 2021?'
+                                           target='_blank'>
+                                             <span>ChatGPT prompt: Hvor stort var Danmarks betalingsbalanceoverskud i 2021?</span>
+                                        </a>
+                                        <br>
+                                        <br>
+                                        <a href='https://claude.ai'
+                                           class='effectLinks'
+                                           data-replace='Claude prompt: Beskriv størrelsen og sammensætningen af Danmarks betalingsbalanceoverskud i 2021'
+                                           target='_blank'>
+                                             <span>Claude prompt: Beskriv størrelsen og sammensætningen af Danmarks betalingsbalanceoverskud i 2021</span>
+                                        </a>
+                                        <br>">
+                                   <div class="option"
+                                        data-option="226 mia. kr."></div>
+                                   <div class="option"
+                                        data-option="179 mia. kr."></div>
+                                   <div class="option"
+                                        data-option="79 mia. kr."></div>
+                                   <div class="option"
+                                        data-option="100 mia. kr."></div>
+                              </div>
+
+                              <!-- 3.4 -->
+                              <div class="question"
+                                   data-question="Hvordan har tjenestebalancen udviklet sig i perioden 2014-2021?"
+                                   data-answer="3"
+                                   data-explanation="Udvikling i tjenestebalancen 2014-2021:<br><br>
+                                   • Konstant overskud i perioden<br>
+                                   • 2014: 64 mia. kr.<br>
+                                   • 2020: 42 mia. kr. (lavpunkt under corona)<br>
+                                   • 2021: 100 mia. kr. (særligt stort overskud)<br><br>
+                                   2021 var præget af ekstraordinært store indtægter fra søtransporten.<br><br>
+                                   <a href='https://chat.openai.com'
+                                      class='effectLinks'
+                                      data-replace='ChatGPT prompt: Beskriv udviklingen i Danmarks tjenestebalance 2014-2021'
+                                      target='_blank'>
+                                        <span>ChatGPT prompt: Beskriv udviklingen i Danmarks tjenestebalance 2014-2021</span>
+                                   </a>
+                                   <br>
+                                   <br>
+                                   <a href='https://claude.ai'
+                                      class='effectLinks'
+                                      data-replace='Claude prompt: Hvordan har den danske tjenestebalance udviklet sig fra 2014 til 2021?'
+                                      target='_blank'>
+                                        <span>Claude prompt: Hvordan har den danske tjenestebalance udviklet sig fra 2014 til 2021?</span>
+                                   </a>
+                                   <br>">
+                                   <div class="option"
+                                        data-option="Konstant underskud"></div>
+                                   <div class="option"
+                                        data-option="Faldende overskud"></div>
+                                   <div class="option"
+                                        data-option="Neutral balance"></div>
+                                   <div class="option"
+                                        data-option="Vedvarende overskud med særligt stort overskud i 2021"></div>
+                              </div>
+
+                              <!-- 3.5 -->
+                              <div class="question"
+                                   data-question="Hvad viser overførselsbalancen for 2021?"
+                                   data-answer="0"
+                                   data-explanation="Overførselsbalancen 2021 viser:<br><br>
+                                   • Lønindkomst: -14 mia. kr.<br>
+                                   • Formueindkomst: +98 mia. kr.<br>
+                                   • Øvrige løbende overførsler: -36 mia. kr.<br>
+                                   • Samlet overskud: +47 mia. kr.<br><br>
+                                   Det positive resultat skyldes især stor formueindkomst fra udlandet.<br><br>
+                                   <a href='https://chat.openai.com'
+                                      class='effectLinks'
+                                      data-replace='ChatGPT prompt: Hvad viser Danmarks overførselsbalance for 2021?'
+                                      target='_blank'>
+                                        <span>ChatGPT prompt: Hvad viser Danmarks overførselsbalance for 2021?</span>
+                                   </a>
+                                   <br>
+                                   <br>
+                                   <a href='https://claude.ai'
+                                      class='effectLinks'
+                                      data-replace='Claude prompt: Forklar komponenterne i Danmarks overførselsbalance 2021'
+                                      target='_blank'>
+                                        <span>Claude prompt: Forklar komponenterne i Danmarks overførselsbalance 2021</span>
+                                   </a>
+                                   <br>">
+                                   <div class="option"
+                                        data-option="Overskud på 47 mia. kr. primært pga. formueindkomst"></div>
+                                   <div class="option"
+                                        data-option="Underskud på 47 mia. kr."></div>
+                                   <div class="option"
+                                        data-option="Balance mellem indtægter og udgifter"></div>
+                                   <div class="option"
+                                        data-option="Overskud kun på lønindkomst"></div>
+                              </div>
+
+                              <!-- 3.10 -->
+                              <div class="question"
+                                   data-question="Hvilken udvikling har der været i Danmarks betalingsbalance siden 1990?"
+                                   data-answer="3"
+                                   data-explanation="Danmarks betalingsbalanceudvikling siden 1990:<br><br>
+                                   • Fra underskud til overskud<br>
+                                   • Stigende overskud efter 2000<br>
+                                   • Særligt stort overskud efter 2010<br>
+                                   • 2021: Overskud på 226 mia. kr.<br><br>
+                                   Årsager:<br>
+                                   • Forbedret konkurrenceevne<br>
+                                   • Øget eksport<br>
+                                   • Højere opsparing<br><br>
+                                   <a href='https://chat.openai.com'
+                                      class='effectLinks'
+                                      data-replace='ChatGPT prompt: Beskriv udviklingen i Danmarks betalingsbalance siden 1990'
+                                      target='_blank'>
+                                        <span>ChatGPT prompt: Beskriv udviklingen i Danmarks betalingsbalance siden 1990</span>
+                                   </a>
+                                   <br>
+                                   <br>
+                                   <a href='https://claude.ai'
+                                      class='effectLinks'
+                                      data-replace='Claude prompt: Hvordan har Danmarks betalingsbalance udviklet sig de sidste 30 år?'
+                                      target='_blank'>
+                                        <span>Claude prompt: Hvordan har Danmarks betalingsbalance udviklet sig de sidste 30 år?</span>
+                                   </a>
+                                   <br>">
+                                   <div class="option"
+                                        data-option="Konstant underskud"></div>
+                                   <div class="option"
+                                        data-option="Stigende underskud"></div>
+                                   <div class="option"
+                                        data-option="Svingende balance"></div>
+                                   <div class="option"
+                                        data-option="Fra underskud til stort overskud"></div>
+                              </div>
+
+
+
+
+
+
+
+
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </div>
+
+     <script src="
+                                        script.js">
+                                        </script>
+</body>
+
+</html>

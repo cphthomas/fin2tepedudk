@@ -1,0 +1,796 @@
+/* CSS (styles.css) */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;150;200&display=swap');
+
+
+header {
+    display: flex;
+    position: relative;
+    align-items: center;
+    /* background: rgb(73, 103, 170); */
+    background: rgb(73, 103, 170, 0.8);
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10002 !important;
+}
+
+header img {
+    position: absolute;
+    height: 80%;
+    width: auto;
+    left: 8px;
+    transform: translateY(-50%);
+    filter: brightness(0) invert(1);
+    /* Makes the image white */
+}
+
+header h2 {
+    text-align: center;
+    color: white;
+    width: 100%;
+
+}
+
+.container {
+    padding-top: 70px;
+    position: relative;
+    /* Add this */
+    z-index: 1;
+    /* Add this */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: normal;
+    /* Use the thin weight of Roboto */
+    /* background: #E8CBC0;
+background: -webkit-linear-gradient(to right, #E8CBC0, #b3b5bd);
+background: linear-gradient(to right, #E8CBC0, #9d9fa5); */
+    min-height: 100vh;
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.thin {
+    font-family: 'Roboto', sans-serif;
+    /* Use the imported font */
+    font-weight: 30;
+    /* Set to the thinnest available weight for the font */
+    /* filter: brightness(110%) contrast(90%); */
+    /* Optional: Adjust if you need to subtly alter the visual weight */
+}
+
+
+#start-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Adjust this value as needed */
+}
+
+#options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+pre {
+    background-color: #000;
+    color: #0f0;
+    padding: 10px;
+
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10px;
+
+    /* Adjust this value as needed */
+    text-align: left;
+    /* Added this line to align content to the left */
+    white-space: pre-wrap;
+    /* Added this to allow text wrapping */
+    word-wrap: break-word;
+    /* Added this to break long words if necessary */
+
+}
+
+
+.btn {
+    width: 50%;
+    border-radius: 0;
+
+    background: rgb(73, 103, 170);
+    /* Button background */
+    color: white;
+    /* Text color */
+    border-color: rgba(220, 220, 220, 0.5);
+}
+
+
+
+.btn:hover,
+.swal2-confirm:hover,
+.swal2-cancel:hover {
+    background-color: #707070;
+    /* Slightly darker grey when hovering */
+    border-color: #707070;
+    /* Slightly darker grey when hovering */
+}
+
+/* CSS (styles.css) */
+.btn:active,
+.swal2-confirm:active,
+.swal2-cancel:active {
+    background-color: #606060 !important;
+    /* Even darker grey when pressed */
+    border-color: #606060 !important;
+    /* Even darker grey when pressed */
+    /* Grey */
+    border-radius: 0;
+    /* Square corners */
+}
+
+
+.card {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    max-width: 100%;
+    border-radius: 0;
+    /* Make the card responsive */
+    /* Your existing styles */
+}
+
+
+
+
+.swal2-popup img {
+    max-width: 80%;
+    height: auto;
+}
+
+
+.swal2-popup {
+    border: none;
+    /* Remove grey border */
+    border-radius: 0;
+    /* Make popup square */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    /* Add shadow */
+    width: 75% !important;
+    max-width: none !important;
+    /* Make popup narrower */
+    margin: auto;
+    /* Center popup */
+    text-align: center;
+    /* Center text in popup */
+    font-weight: 100;
+    /* Make popup font thinner */
+    font-size: 14px;
+}
+
+.swal2-html-container {
+    font-size: 14px;
+    padding: 2em 4em !important;
+    line-height: 1.6 !important;
+}
+
+.table {
+    width: 80% !important;
+    /* Tilføjet fast bredde på tabeller */
+    margin: 0 auto !important;
+}
+
+.card-body {
+    text-align: center;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+    /* Center text in card body */
+}
+
+.question {
+    text-align: center;
+    padding: 2em 4em;
+    /* Tilføjer padding omkring spørgsmålsteksten */
+    margin: 2em auto;
+    /* Tilføjer margin over og under */
+    max-width: 90%;
+    line-height: 1.6;
+    /* Giver mere luft mellem linjerne */
+}
+
+.question-summary {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.question-text {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.answer-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.correct-answer,
+.user-answer {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.custom-separator,
+.custom-separator2 {
+    width: 100%;
+    background: rgb(73, 103, 170);
+}
+
+.final-results-container .swal2-popup {
+    width: 90%;
+    max-width: 800px;
+}
+
+.final-results-content {
+    text-align: left;
+}
+
+
+.card-title {
+    font-size: 18px;
+    font-style: italic;
+    margin: 1.5em 0;
+    /* Mere vertikal margin */
+
+    /* Adjust as needed */
+}
+
+
+.btn {
+    font-size: 14px;
+    font-style: italic;
+    text-align: center;
+
+    .card {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border: none;
+        max-width: 100%;
+        border-radius: 0;
+        /* Make the card responsive */
+        /* Your existing styles */
+
+    }
+
+
+
+
+
+    /* Adjust as needed */
+}
+
+.popup-text {
+    font-size: 14px;
+    /* Adjust as needed */
+}
+
+.swal2-title {
+    font-size: 20px !important;
+
+    /* Adjust as needed */
+}
+
+
+*/ .swal2-styled {
+
+    /* Grey */
+    border-color: #808080;
+    /* Grey */
+    border-radius: 0;
+    /* Square corners */
+}
+
+.swal2-styled:hover {
+    background-color: #707070 !important;
+    /* Slightly darker grey when hovering */
+    border-color: #707070 !important;
+    color: white !important;
+    /* Slightly darker grey when hovering */
+
+}
+
+.swal2-styled:active {
+    background-color: #606060 !important;
+    /* Even darker grey when pressed */
+    border-color: #606060 !important;
+    color: white !important;
+    /* Even darker grey when pressed */
+
+}
+
+
+.swal2-cancel .button {
+    border-radius: 0;
+    text-align: left;
+    background-color: #808080;
+    /* Grey */
+    border-color: #808080;
+    /* Grey */
+    border-radius: 0;
+    /* Square corners */
+
+}
+
+.swal2-confirm {
+    font-weight: 100;
+    /* Make popup button font thinner */
+    border-radius: 0 !important;
+    /* Make popup button square */
+    color: white !important;
+    background: rgb(73, 103, 170) !important;
+    /* Slightly darker grey when hovering */
+    border-color: #707070 !important;
+    width: auto !important;
+    padding: 0.5em 2em !important;
+}
+
+.swal2-actions {
+    width: 100% !important;
+}
+
+.swal2-confirm.swal2-styled {
+    border-radius: 0 !important;
+    margin: 0 !important;
+}
+
+.custom-swal .swal2-image {
+    width: 30%;
+    height: auto;
+}
+
+
+hr {
+    border: none;
+    height: 1px;
+    background: linear-gradient(to right, grey, rgb(73, 103, 170));
+}
+
+
+.custom-separator {
+    height: 2px;
+    /* Thickness of the separator */
+    background: linear-gradient(to right, grey, rgb(73, 103, 170));
+
+    /* Separator color */
+    margin: 20px 0;
+    /* Space above and below the separator */
+    /* border-radius: 1px; */
+    /* Optional: adds rounded edges to the separator */
+}
+
+.custom-separator2 {
+    height: 1px;
+    /* Thickness of the separator */
+
+    background: linear-gradient(to right, grey, rgb(73, 103, 170));
+    /* Gradient color of the separator */
+    margin: 20px 0;
+    /* Space above and below the separator */
+    /* border-radius: .3px; */
+    /* Optional: adds rounded edges to the separator */
+}
+
+.card2 {
+    display: flex;
+    justify-content: center;
+    /* background-color: #f1ff73; */
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid rgba(232, 203, 192, 0.5);
+    padding: 20px;
+
+}
+
+.card3 {
+    display: flex;
+    justify-content: center;
+    background-color: #f1ff73;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+    border: 1px solid rgba(232, 203, 192, 0.5);
+    padding: 10px;
+    font-size: small;
+
+}
+
+
+.progress-bar-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.progress-bullet {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #ddd;
+    margin: 0 5px;
+}
+
+.progress-bullet.active {
+    background-color: #050b15;
+    /* Change to your preferred color */
+}
+
+
+.effectLinks {
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(73, 103, 170);
+    padding: 10px;
+    width: 50%;
+}
+
+.effectLinks::after {
+    content: attr(data-replace);
+    position: absolute;
+    left: 0;
+    padding-left: 10px;
+    transform-origin: 100% 50%;
+    transform: translate3d(200%, 0, 0);
+    transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1), opacity 0.3s ease;
+    /* added opacity transition */
+    color: white;
+    background: rgba(21, 23, 26, 1);
+    opacity: 0;
+    /* added this line */
+}
+
+.effectLinks:hover::after {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+    color: rgb(43, 150, 226);
+    /* added this line */
+}
+
+.effectLinks:hover {
+    background: rgba(21, 23, 26, 1);
+    color: rgb(43, 150, 226);
+}
+
+.effectLinks span {
+    display: inline-block;
+    transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.effectLinks:hover span {
+    transform: translate3d(-200%, 0, 0);
+}
+
+.final-results .question-text,
+.final-results .answer-heading {
+    text-align: left;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.final-results .correct-answer,
+.final-results .user-answer {
+    text-align: left;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.final-results .answer-container p {
+    margin-bottom: 5px;
+}
+
+.final-results .correct-answer,
+.final-results .user-answer {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.final-results .explanation {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.final-results pre,
+.final-results img {
+    background-color: transparent;
+    max-width: 100%;
+    height: auto;
+}
+
+.custom-swal-popup {
+    width: 90% !important;
+    max-width: 900px !important;
+}
+
+.custom-swal-html-container {
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.swal2-popup img {
+    display: block !important;
+    margin: 0 auto !important;
+}
+
+
+
+/* Styles for GIF images */
+.swal2-popup img[src$=".gif"] {
+    width: 50% !important;
+    max-width: 300px !important;
+    height: auto !important;
+}
+
+/* New styles for the question numbers in the final results */
+.final-results .question-text font[size="+1"] {
+    font-size: 24px !important;
+    font-weight: bold !important;
+    display: block !important;
+    margin-bottom: 10px !important;
+}
+
+@media (max-width: 768px) {
+    .custom-swal-popup {
+        width: 95% !important;
+    }
+
+    .swal2-popup img[src$=".png"] {
+        width: 90% !important;
+    }
+
+    .swal2-popup img[src$=".svg"] {
+        width: 90% !important;
+    }
+
+    .swal2-popup img[src$=".gif"] {
+        width: 60% !important;
+    }
+
+
+
+    /* Adjust font size for smaller screens */
+    .final-results .question-text font[size="+1"] {
+        font-size: 20px !important;
+    }
+}
+
+.tooltip {
+    position: absolute;
+    top: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 0px;
+    white-space: pre-line;
+    z-index: 10001;
+    width: max-content;
+    display: none;
+    pointer-events: none;
+    font-size: 0.8em;
+    font-style: italic;
+    /* Adjust this value as needed */
+
+}
+
+
+
+.quiz-card {
+    position: relative;
+    z-index: 1;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    border-radius: 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.quiz-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+
+.quiz-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #007bff;
+    /* Or any suitable color */
+}
+
+
+.quiz-title-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    /* Needed for absolute positioning of tooltip */
+}
+
+
+
+.info-icon {
+    margin-left: 0.5rem;
+    cursor: pointer;
+    position: relative;
+    /* Needed for absolute positioning of tooltip */
+    display: inline-flex;
+    /* Align with text */
+    align-items: center;
+    /* Align with text */
+    top: -2px;
+    /* Adjust this value to move it up/down */
+}
+
+.info-icon i {
+    font-size: 1.4rem;
+    /* Bigger icon */
+    color: grey;
+    /* White icon */
+}
+
+.info-icon {
+    position: relative;
+    z-index: 10000;
+    /* Make this higher than tooltip */
+}
+
+
+
+/* Add relative positioning to the quiz-card to establish a stacking context */
+.quiz-card {
+    position: relative;
+    z-index: 1;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    border-radius: 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.info-icon {
+    position: relative;
+    z-index: 10000;
+    /* Make this higher than tooltip */
+}
+
+
+
+
+.tooltip.show {
+    display: block;
+}
+
+.MathJax {
+    color: #666 !important;
+}
+
+/* Blue background containers with white text */
+#preStartContent,
+#postProgressContent {
+    display: flex;
+    justify-content: left;
+    background-color: rgb(73, 103, 170);
+    color: white;
+    align-items: left;
+    width: 50%;
+    margin: 0 auto;
+    border: none;
+    border-radius: 0;
+    padding: 20px;
+    text-align: left;
+    font-style: italic;
+
+    .MathJax {
+        color: white !important;
+    }
+
+    mjx-container {
+        color: white !important;
+    }
+
+    mjx-math {
+        color: white !important;
+    }
+}
+
+/* White text only for tables within blue containers */
+#preStartContent .table-striped,
+#postProgressContent .table-striped {
+    color: white;
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+/* Normal text color for all other tables */
+.table-striped {
+    color: #333;
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+/* Alternating row colors for blue background */
+#preStartContent .table-striped tbody tr:nth-of-type(odd),
+#postProgressContent .table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Alternating row colors for normal tables */
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* White borders for tables in blue background */
+#preStartContent .table-bordered,
+#postProgressContent .table-bordered {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Normal borders for other tables */
+.table-bordered {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+/* White cell borders for tables in blue background */
+#preStartContent .table-bordered td,
+#preStartContent .table-bordered th,
+#postProgressContent .table-bordered td,
+#postProgressContent .table-bordered th {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 4px 8px;
+}
+
+/* Normal cell borders for other tables */
+.table-bordered td,
+.table-bordered th {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 4px 8px;
+}
+
+/* Hover effects for tables in blue background */
+#preStartContent .table-hover tbody tr:hover,
+#postProgressContent .table-hover tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: lightgrey;
+}
+
+/* Hover effects for normal tables */
+.table-hover tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.075);
+    color: #333;
+}
+
+/* General table styles */
+.table {
+    margin-bottom: 0.5rem;
+    font-size: 0.85em;
+}
+
+.table td,
+.table th {
+    padding: 0.4rem;
+    vertical-align: middle;
+}
